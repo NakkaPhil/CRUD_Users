@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+input{
+  border-radius: .3rem;
+  border: none;
+  padding: .5rem;
+}
+
+body::-webkit-scrollbar {
+  display:none;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.AppContainer{
+  width: 100%;
+  display: grid;
+}
+
+@media(min-width:768px){
+  .AppContainer{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.input-container{
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+
+.input-container label{
+  flex: .1;
+  margin-right: .7rem;
+}
+
+.inputs-container{
+  display: flex;
+  flex: 1;
+}
+
+.input-container input{
+  flex: 1;
+  margin-right: .5rem;
+}
+
+.input-container input:last-child{
+  margin-right: 0;
+}
+
+/*USER INFO*/
+.usersShow h1,
+.usersRegister h1
+{
+  text-align: center;
+}
+
+.usersRegister{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #e4e3f4;
+  box-shadow: 0px -7px 10px #242323
+}
+
+
+@media(min-width:768px){
+  .usersRegister{
+    box-shadow: -7px 0px 15px #444242;
+  }
+}
+
+.usersShow{
+  background: linear-gradient(to right bottom, #a4b6db, #244184);
+  height: 85vh;
+  overflow: scroll;
+  padding: 1rem;
+}
+
+@media(min-width:768px){
+  .usersShow{
+    height: 100vh;
+  }
+}
+
+.userInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255 251 251 / 57%);
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  margin: 1.5rem;
+  transition: all ease .2s;
+}
+
+.userInfo:hover{
+  transform: scale(1.1);
+  background-color: rgb(255 251 251);
+}
+
+@media(min-width:411px){
+  .userInfo{
+    flex-direction: row;
+  }
+}
+
+.userData{
+  text-align: start;
+  width: 100%;
+}
+
+
+/*Actions User Info*/
+.actions button{
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+}
+
+.userForm{
+  margin-top: 1rem;
+}
+
+.chargeUser{
+  padding: .5rem 1rem;
+  align-self: center;
+  display: flex;
+  max-width: 10rem;
+  border: none;
+  background-color: whitesmoke;
+  border-radius: .3rem;
+  box-shadow: 1px 1px 5px #bb9393;
+  transition: all ease .2s;
+}
+
+.chargeUser:hover{
+  background-color: #244184;
+  color: white;
+}
